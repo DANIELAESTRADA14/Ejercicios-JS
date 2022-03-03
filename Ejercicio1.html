@@ -7,6 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+
+        /*Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.*/
+       
+       /* function contarCaracteres(cadena=""){
+            if(!cadena){
+                console.warm("No ingresaste ninguna cadena")
+            }else {
+                console.info(`La cadena "${cadena}" tiene ${cadena.length} caracteres`)
+            }
+        }
+
+    contarCaracteres("Hola Mundo");*/
+
+    const ContarCaracteres = (cadena = "") => (!cadena) ? console.warm("No ingresaste ninguna cadena") : console.info(`La cadena "${cadena}" tiene ${cadena.length} caracteres`);
+
+    ContarCaracteres("Hola Mundo")
+    </script>
 </body>
 </html>
