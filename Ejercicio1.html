@@ -25,21 +25,6 @@
 
     ContarCaracteres("Hola Mundo")
 
-    /*Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".*/
-
-    const recortarTexto = (cadena = "", longitud = undefined) =>
-    (!cadena)
-    ? console.warn("No ingresaste ninguna cadena de texto")
-    : (longitud === undefined) 
-        ? console.warn("No ingresaste la longitud")
-        : console.info(cadena.slice(0,longitud));
-
-
-    recortarTexto("Hola Mundo", 7);
-    recortarTexto("Hola Mundo");
-    recortarTexto("",5);
-    
-
     </script>
 </body>
 </html>
