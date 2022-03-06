@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <script>
+        /* Programa una función que invierta las palabras de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá "odnuM aloH".*/
+
+       /* function reversar(cadena){
+            let texto = cadena.split("");
+            let reves = texto.reverse();
+            return reves;
+        }
+
+        console.log(reversar("Hola"));
+        console.log(reversar("Daniela Estrada"));*/
+
+        const invertirCadena = (cadena = "") => 
+        (!cadena)
+        ? console.warn("No ingresaste cadena de texto")
+        : console.info(cadena.split("").reverse().join(""));
+        
+        invertirCadena("Hola Mundo");
+
+    </script>
+</body>
+</html>
