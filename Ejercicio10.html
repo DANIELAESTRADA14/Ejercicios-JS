@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <script>
+        /*Programa una función que reciba un número y evalúe si es capicúa o no (que se lee igual en un sentido que en otro), pe. miFuncion(2002) devolverá true.*/
+
+       const capicua = (numero=0) => {
+           if (!numero) return console.warn("No ingresaste un número")
+           if (typeof numero !== "number") return console.error("El valor no es un número")
+
+           numero = numero.toString();
+           let capicua = numero.split().reverse().join()
+
+           return (numero === capicua)
+           ? console.info(`Sí es capicua,numero original: ${numero},numero al reves ${capicua}`) 
+            : console.info(`No es palindromo,numero original: ${numero},numero al reves ${capicua}`)
+       }
+
+       capicua();
+       capicua("19");
+       capicua(2002);
+       capicua(2121);
+
+    </script>
+</body>
+</html>

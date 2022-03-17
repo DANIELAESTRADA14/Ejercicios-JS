@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>
+    <script>
+        /*Programa una función que calcule el factorial de un número (El factorial de un entero positivo n, se define como el producto de todos los números enteros positivos desde 1 hasta n), pe. miFuncion(5) devolverá 120.*/
+
+        function calcularFactorial(n){
+            let total = 1;
+            for(i = 1; i <= n; i++){
+                total = total * i;
+            }
+
+            return total;
+        }
+
+        let numero1 = console.log(calcularFactorial(5));
+
+
+    </script>
+</body>
+</html>
