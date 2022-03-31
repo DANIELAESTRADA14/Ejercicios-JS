@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+</head>
+<body>
+    <script>
+/*Programa una función que dada una fecha válida determine cuantos años han pasado hasta el día de hoy, pe. miFuncion(new Date(1984,4,23)) devolverá 35 años (en 2020).*/ 
+
+        const calcular = (fecha) => {
+            let hoyMenosFecha = new Date().getTime() - fecha.getTime();
+
+            let anios= 1000 * 60 * 60 * 24 * 365;
+
+            aniosHumanos= Math.floor(hoyMenosFecha/anios)
+
+            console.log(`Han transcurrido ${aniosHumanos} años`)
+
+            return aniosHumanos;
+
+        }
+
+        calcular(new Date(1995,10,14))
+
+
+
+    </script>
+</body>
+</html>

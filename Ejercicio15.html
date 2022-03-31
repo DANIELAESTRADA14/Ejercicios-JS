@@ -8,7 +8,35 @@
 </head>
 <body>
     <script>
+        /*Programa una función que devuelva el monto final después de aplicar un descuento a una cantidad dada, pe. miFuncion(1000, 20) devolverá 800.*/  
 
+        /*function calcular(valor,descuento){
+            let resultado = valor * (descuento/100);
+            let total = valor - resultado;
+            return total;
+        }
+
+        console.log(calcular(1000,20))
+        console.log(calcular(5000,20))*/ 
+
+        const calcular = (valor = undefined,descuento = undefined) => {
+            if(valor == undefined) return console.warn("No ingresaste valor")
+
+            if(typeof valor !== "number" ) return console.warn("Debes ingresar un numero")
+
+            if(descuento == undefined) return console.warn("No ingresaste el descuento")
+
+            if(typeof descuento !== "number" ) return console.warn("Debes ingresar un numero")
+
+            let resultado = (valor * (descuento/100))
+            let total = valor - resultado;
+            return total;
+        }
+
+        console.log(calcular(1000,20))
+        console.log(calcular(5000,20))
+        console.log(calcular(5000))
+        console.log(calcular("A",10))
         
     </script>
 </body>
